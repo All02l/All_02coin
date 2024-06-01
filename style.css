@@ -1,46 +1,44 @@
-
-
 body {
-  background-color: #f0f0f0;
-  font-family: Arial, sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  height: 100vh;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
 }
 
-.container{
+.container {
     text-align: center;
     background: white;
     padding: 20px;
-    border-radius: 10px
-    box-shadow: 0 4px 8px rgda(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#clickButton{
+#clickButton {
     background: none;
     border: none;
     padding: 0;
     cursor: pointer;
 }
 
-#clickButton img{
-    width: 150px;
+#clickButton img {
+    width: 150px; /* Adjust the size as needed */
     height: auto;
 }
 
-#clickButton:hover img{
+#clickButton:hover img {
     transform: scale(1.1);
-    transition: transform0.2s;
+    transition: transform 0.2s;
 }
 
 @keyframes countAnimation {
-    0% { transform:scale(1); color: black;}
-    50% { transform: scale(1.5); color: gold;}
-    100% { transform: scale(1); color: black;}
+    0% { transform: scale(1); color: black; }
+    50% { transform: scale(1.5); color: gold; }
+    100% { transform: scale(1); color: black; }
 }
 
 .animated {
-    animation: countAnimation 0.5 ease;
+    animation: countAnimation 0.5s ease;
 }
